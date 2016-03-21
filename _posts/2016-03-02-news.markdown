@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "News"
+date:   2016-03-02
+categories: news
+---
+1 CVPR paper has been accepted as <strong><u>spotlight</u></strong>!

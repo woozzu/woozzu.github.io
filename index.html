@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+
+
+<!-- News -->
+    <section id="news">
+        <div class="container">
+            <header class="major">
+                <h2>News</h2>
+            </header>
+            {% for post in site.categories.news limit:3 %}
+            <p>
+                <h4>{{ post.date | date: "%b %-d, %Y" }}</h4>
+                {{ post.content }}
+            </p>
+            {% endfor %}
+        </div>
+    </section>
+
+<!-- Bio -->
+    <section id="bio">
+        <div class="container">
+            <h3>Bio</h3>
+            <p>
+                I'm a M.S./Ph.D. (integrated course) 5th semester student at <a href="http://www.yonsei.ac.kr" target="_blank"><strong>Yonsei University</strong></a>, advised by Prof. <a href="https://sites.google.com/site/seonjookim" target="_blank"><strong>Seon Joo Kim</strong></a>. My research interests focus on <strong>Computational Photography</strong> and <strong>Image/Video Understanding</strong>. Particularly, I'm interested in <strong>Deep Learning</strong> and its applications to <strong>Image Filtering/Generation</strong> and <strong>Image/Video Summarization</strong>.<br />
+                I received the B.S. degree in Computer Science at Yonsei University, in 2014. Also, I have three years of work experience developing android/server-side applications at two startup companies.
+            </p>
+            <ul class="feature-icons">
+                <li class="fa-star">
+                    <strong>Bronze Prize</strong><br />
+                    <i>22nd Samsung HumanTech Paper Award</i><br />
+                    2016
+                </li>
+                <li class="fa-graduation-cap">
+                    <strong>Global Ph.D. Fellowship</strong><br />
+                    <i>National Research Foundation of Korea</i><br />
+                    2015~
+                </li>
+            </ul>
+        </div>
+    </section>
+
+<!-- Publication -->
+    <section id="publication">
+        <div class="container">
+            <h3>Publication</h3>
+            <div class="features">
+                {% for post in site.categories.publication %}
+                <article>
+                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                    <div class="inner">
+                        <h4>{{ post.title }}</h4>
+                        <p>{{ post.authors }}<br /><i>{{ post.booktitle }}</i></p>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Me -->
+    <section id="contact">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <p>Please contact me if you have any questions about my publication or anything.</p>
+            <form method="post" action="#">
+                <div class="row uniform">
+                    <div class="6u 12u(xsmall)">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="6u 12u(xsmall)">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row uniform">
+                    <div class="12u">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="row uniform">
+                    <div class="12u">
+                        <textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+                    </div>
+                </div>
+                <div class="row uniform">
+                    <div class="12u">
+                        <ul class="actions">
+                            <li><input type="submit" class="special" value="Send Message"></li>
+                            <li><input type="reset" value="Reset Form"></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>

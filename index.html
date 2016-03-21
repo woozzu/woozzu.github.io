@@ -49,15 +49,15 @@ layout: default
             <div class="features">
                 {% for post in site.categories.publication %}
                 <article>
-                    <a href="#" class="image"><img src="images/{{ post.thumbnail }}" alt="" /></a>
+                    <a href="#" class="image"><img src="{{ site.baseurl }}/images/{{ post.thumbnail }}" alt="" /></a>
                     <div class="inner">
                         <h4>{{ post.title }}</h4>
                         <p>
                             {{ post.authors }}<br />
                             <i>{{ post.booktitle }}</i><br />
-                            {% if post.pdf %}<a href="assets/{{ post.pdf }}">[PDF]</a>{% endif %}
-                            {% if post.projecturl %}&nbsp;<a href="/{{ post.projecturl }}">[Project Page]</a>{% endif %}
-                            {% if post.bibtex %}&nbsp;<a href="assets/{{ post.bibtex }}">[bibtex]</a>{% endif %}
+                            {% if post.pdf %}<a href="{{ site.baseurl }}/assets/{{ post.pdf }}">[PDF]</a>{% endif %}
+                            {% if post.projecturl %}&nbsp;<a href="{{ site.baseurl }}/{{ post.projecturl }}">[Project Page]</a>{% endif %}
+                            {% if post.bibtex %}&nbsp;<a href="{{ site.baseurl }}/assets/{{ post.bibtex }}">[bibtex]</a>{% endif %}
                         </p>
                     </div>
                 </article>

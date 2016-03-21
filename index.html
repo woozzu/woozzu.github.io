@@ -49,10 +49,16 @@ layout: default
             <div class="features">
                 {% for post in site.categories.publication %}
                 <article>
-                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                    <a href="#" class="image"><img src="images/{{ post.thumbnail }}" alt="" /></a>
                     <div class="inner">
                         <h4>{{ post.title }}</h4>
-                        <p>{{ post.authors }}<br /><i>{{ post.booktitle }}</i></p>
+                        <p>
+                            {{ post.authors }}<br />
+                            <i>{{ post.booktitle }}</i><br />
+                            {% if post.pdf %}<a href="assets/{{ post.pdf }}">[PDF]</a>{% endif %}
+                            {% if post.projecturl %}&nbsp;<a href="/{{ post.projecturl }}">[Project Page]</a>{% endif %}
+                            {% if post.bibtex %}&nbsp;<a href="assets/{{ post.bibtex }}">[bibtex]</a>{% endif %}
+                        </p>
                     </div>
                 </article>
                 {% endfor %}
@@ -65,7 +71,13 @@ layout: default
         <div class="container">
             <h3>Contact Me</h3>
             <p>Please contact me if you have any questions about my publication or anything.</p>
-            <form method="post" action="#">
+            <form method="post" action="//flipmail.co/api/IlSodsLWWned0MzosVzS">
+                <input type="hidden" name="_valid[name]" value="required">
+                <input type="hidden" name="_valid[email]" value="required|valid_email">
+                <input type="hidden" name="_valid[message]" value="required">
+                <input type="hidden" name="_replyto" value="%email">
+                <input type="hidden" name="_after" value="http://shnam.ml">
+                <input type="text" name="_honey" value="" style="display:none">
                 <div class="row uniform">
                     <div class="6u 12u(xsmall)">
                         <input type="text" name="name" id="name" placeholder="Name">
@@ -76,7 +88,7 @@ layout: default
                 </div>
                 <div class="row uniform">
                     <div class="12u">
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                        <input type="text" name="_subject" id="subject" placeholder="Subject">
                     </div>
                 </div>
                 <div class="row uniform">

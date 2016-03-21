@@ -3,7 +3,7 @@ title: Seonghyeon Nam, CS M.S./Ph.D. Student @ Yonsei University
 email: shnnam@yonsei.ac.kr
 description: > # this means to ignore newlines until "baseurl:"
   Seonghyeon Nam, CS M.S./Ph.D. Student @ Yonsei University
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://shnam.ml" # the base hostname & protocol for your site
 facebook_username: woozzu
 github_username:  woozzu

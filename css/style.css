@@ -550,6 +550,7 @@
 				padding: 0.35em 0 0 3.5em;
 				position: relative;
 				width: 48%;
+				vertical-align: top;
 			}
 
 				ul.feature-icons li:before {

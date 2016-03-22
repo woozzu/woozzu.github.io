@@ -4,4 +4,4 @@ title:  "News"
 date:   2016-01-23
 categories: news
 ---
-I awarded <strong><u>a bronze prize</u></strong> at 22nd Samsung HumanTech Paper Award!
+I awarded a <strong>bronze prize</strong> at <strong>22nd Samsung HumanTech Paper Award</strong>.

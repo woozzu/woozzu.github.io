@@ -4,4 +4,4 @@ title:  "News"
 date:   2016-03-02
 categories: news
 ---
-1 CVPR paper has been accepted as <strong><u>spotlight</u></strong>!
+Our paper <strong>"A Holistic Approach to Cross-Channel Image Noise Modeling and its Application to Image Denoising"</strong> has been accepted as <strong>spotlight</strong> presentation to <strong>CVPR 2016</strong>.

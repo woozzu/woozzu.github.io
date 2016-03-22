@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "News"
+title:  News
 date:   2016-01-23
 categories: news
 ---
-I awarded a <strong>bronze prize</strong> at <strong>22nd Samsung HumanTech Paper Award</strong>.
+I awarded a **bronze prize** at **22nd Samsung HumanTech Paper Award**.

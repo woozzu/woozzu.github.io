@@ -55,6 +55,7 @@ layout: default
                         <p>
                             {{ post.authors }}<br />
                             <i>{{ post.booktitle }}</i><br />
+                            <strong>[{{ post.feature }}]</strong><br />
                             {% if post.pdf %}<a href="{{ site.baseurl }}/assets/{{ post.pdf }}">[PDF]</a>{% endif %}
                             {% if post.projecturl %}&nbsp;<a href="{{ site.baseurl }}/research/{{ post.projecturl }}">[Project]</a>{% endif %}
                             {% if post.bibtex %}&nbsp;<a href="{{ site.baseurl }}/assets/{{ post.bibtex }}">[bibtex]</a>{% endif %}

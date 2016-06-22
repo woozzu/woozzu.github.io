@@ -29,4 +29,4 @@ Publications
 * **A Holistic Approach to Cross-Channel Image Noise Modeling and its Application to Image Denoising**<br />
 Seonghyeon Nam\*, Youngbae Hwang\*, Yasuyuki Matsushita, Seon Joo Kim<br />
 *Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2016 **[Spotlight]***<br />
-[\[PDF\]]() [\[bibtex\]]()
+[\[PDF\]]({{ site.url }}/assets/ccnoise_cvpr16/ccnoise_cvpr16.pdf) [\[supplementary material\]]({{ site.url }}/assets/ccnoise_cvpr16/ccnoise_cvpr16_supp.pdf) [\[bibtex\]]({{ site.url }}/assets/ccnoise_cvpr16/bibtex.txt)

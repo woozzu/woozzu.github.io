@@ -14,7 +14,7 @@ Modelling and analyzing noise in images is a fundamental task in many computer v
 
 Datasets.
 ------------------------  
-Real Image Noise Dataset consists of 11 static scenes captured by 3 consumer cameras. For each scene, 500 temporal images were captured to compute temporal mean image and covariance matrix for each pixel. However, this package only contains one of the 500 images for size limit, with precomputed temporal mean and covariance matrix data.
+Our dataset consists of 11 static scenes captured by 3 consumer cameras. For each scene, 500 temporal images were captured to compute temporal mean image and covariance matrix for each pixel. However, this package only contains one of the 500 images for size limit, with precomputed temporal mean and covariance matrix data. For detailed information, please refer to the paper and supplementary material.
 
 We did not upload our dataset yet for size limit (our dataset is 10GB). So, please contact us via [email](mailto:shnnam@yonsei.ac.kr) if you need.
 

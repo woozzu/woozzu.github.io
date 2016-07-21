@@ -17,10 +17,10 @@ Source Code
 Please visit our [github repository](https://github.com/woozzu/ccnoise).
 
 To run demo,
-- Create a dataset from temporal images: run `demo_dataset.m`
-- Create training data: run `train/demo_create_training_data.py`
-- Train a multi-layer perceptron (MLP): run `caffe.exe train -solver=train/solver.prototxt`
-- Estimate the noise parameters of a test image using a trained MLP: run `demo_estimation.m`
+* Create a dataset from temporal images: run `demo_dataset.m`
+* Create training data: run `train/demo_create_training_data.py`
+* Train a multi-layer perceptron (MLP): run `caffe.exe train -solver=train/solver.prototxt`
+* Estimate the noise parameters of a test image using a trained MLP: run `demo_estimation.m`
 
 
 Dataset

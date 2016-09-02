@@ -4,4 +4,4 @@ title:  News
 date:   2016-06-03
 categories: news
 ---
-I was awarded an **excellent paper award** by CS, Yonsei University.
+I was awarded an **excellent paper award** by Dept. of Computer Science, Yonsei University.

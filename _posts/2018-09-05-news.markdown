@@ -1,0 +1,7 @@
+---
+layout: post
+title:  News
+date:   2018-09-05
+categories: news
+---
+Our paper **"Text-Adaptive Generative Adversarial Networks: Manipulating Images with Natural Language"** has been accepted as **spotlight** presentation to **NIPS 2018**!

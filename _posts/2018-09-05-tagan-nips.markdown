@@ -11,4 +11,5 @@ paper: tagan_nips18/tagan.pdf
 supp: tagan_nips18/tagan_supp.pdf
 feature: Spotlight (198/4856, acceptance rate 4.1%)
 bibtex : 
+github: https://github.com/woozzu/tagan
 ---

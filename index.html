@@ -30,14 +30,14 @@ layout: default
             </p>
             <ul class="feature-icons">
                 <li class="fa-star">
-                        <strong>NAVER Ph.D. Fellowship</strong><br />
-                        <i>NAVER Corporation</i><br />
-                        2017
+                    <strong>NAVER Ph.D. Fellowship</strong><br />
+                    <i>NAVER Corporation</i><br />
+                    2017
                 </li>
                 <li class="fa-star">
-                        <strong>Excellent Paper Award</strong><br />
-                        <i>Dept. of CS, Yonsei University</i><br />
-                        2016
+                    <strong>Excellent Paper Award</strong><br />
+                    <i>Dept. of CS, Yonsei University</i><br />
+                    2016
                 </li>
                 <li class="fa-star">
                     <strong>Bronze Prize</strong><br />
@@ -71,6 +71,7 @@ layout: default
                             {% if post.paper_rawurl %}<a href="{{ post.paper_rawurl }}">[pdf]</a>{% endif %}
                             {% if post.supp %}<a href="{{ site.baseurl }}/assets/{{ post.supp }}">[supplementary_material]</a>{% endif %}
                             {% if post.projecturl %}&nbsp;<a href="{{ site.baseurl }}/research/{{ post.projecturl }}">[project page]</a>{% endif %}
+                            {% if post.github %}&nbsp;<a href="{{ post.github }}">[github]</a>{% endif %}
                             {% if post.bibtex %}&nbsp;<a href="{{ site.baseurl }}/assets/{{ post.bibtex }}">[bibtex]</a>{% endif %}
                         </p>
                     </div>

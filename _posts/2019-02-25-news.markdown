@@ -1,0 +1,7 @@
+---
+layout: post
+title:  News
+date:   2019-02-25
+categories: news
+---
+Our paper **"End-to-End Time-Lapse Video Synthesis from a Single Outdoor Image"** has been accepted to **CVPR 2019**!

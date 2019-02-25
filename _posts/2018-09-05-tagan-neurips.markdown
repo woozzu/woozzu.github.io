@@ -10,6 +10,6 @@ booktitle: Proc. Advances in Neural Information Processing Systems 32 (NeurIPS) 
 paper: tagan_neurips18/tagan.pdf
 supp: tagan_neurips18/tagan_supp.pdf
 feature: Spotlight (168/4856, acceptance rate 3.5%)
-bibtex : 
+bibtex : tagan_neurips18/tagan.txt
 github: https://github.com/woozzu/tagan
 ---

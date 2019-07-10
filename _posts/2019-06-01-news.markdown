@@ -1,0 +1,7 @@
+---
+layout: post
+title:  News
+date:   2019-06-01
+categories: news
+---
+I started working with **Adobe Research** through a university collaboration program of **Adobe Research**.

@@ -4,4 +4,4 @@ title:  News
 date:   2019-09-04
 categories: news
 ---
-Our paper **"Unsupervised Keypoint Learning for Guiding Class-conditional Video Prediction"** has been accepted to **NeurIPS 2019**!
+Our paper **"Unsupervised Keypoint Learning for Guiding Class-Conditional Video Prediction"** has been accepted to **NeurIPS 2019**!

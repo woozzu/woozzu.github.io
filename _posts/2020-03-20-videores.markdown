@@ -1,0 +1,11 @@
+---
+layout: post
+date:   2010-03-20
+categories: publication
+
+thumbnail: videores.png
+title:  "Learning the Loss Functions in a Discriminative Space for Video Restoration"
+authors: Younghyun Jo, Jaeyeon Kang, Seoung Wug Oh, <strong>Seonghyeon Nam</strong>, Peter Vajda, Seon Joo Kim
+booktitle: arXiv
+paper_rawurl: https://arxiv.org/abs/1910.02027
+---

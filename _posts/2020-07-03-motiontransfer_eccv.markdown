@@ -7,5 +7,5 @@ thumbnail: motiontransfer_eccv20.png
 title:  "Cross-Identity Motion Transfer for Arbitrary Objects through Pose-Attentive Video Reassembling"
 authors: Subin Jeon, <strong>Seonghyeon Nam</strong>, Seoung Wug Oh, Seon Joo Kim
 booktitle: Proc. European Conference on Computer Vision (ECCV) 2020
-arxiv: https://arxiv.org/abs/2007.08786
+paper_rawurl: https://arxiv.org/abs/2007.08786
 ---

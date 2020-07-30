@@ -1,0 +1,6 @@
+@inproceedings{Nam16CVPR,
+    author = {S. Nam and Y. Hwang and Y. Matsushita and S. J. Kim},
+    title = {A Holistic Approach to Cross-Channel Image Noise Modeling and its Application to Image Denoising},
+    booktitle = {Proc. IEEE Conference on Computer Vision and Pattern Recognition},
+    year = {2016},
+}

@@ -1,0 +1,6 @@
+---
+layout: post
+date:   2016-03-02
+inline: true
+---
+Our paper **"A Holistic Approach to Cross-Channel Image Noise Modeling and its Application to Image Denoising"** has been accepted as **spotlight** presentation to **CVPR 2016**.

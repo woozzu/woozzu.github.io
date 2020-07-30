@@ -1,7 +1,0 @@
----
-layout: post
-title:  News
-date:   2016-01-23
-categories: news
----
-I was awarded a **bronze prize** by **22nd Samsung HumanTech Paper Award**.

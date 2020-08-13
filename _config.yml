@@ -109,6 +109,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll/scholar
   - jemoji
+  - jekyll-youtube
   # - bootstrap
   # - material-sass
 

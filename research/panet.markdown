@@ -7,7 +7,7 @@ Cross-Identity Motion Transfer for Arbitrary Objects<br />through Pose-Attentive
 ================================
 <div style="text-align: center"><img src="{{ site.url }}/research/img/panet/teasor.png" width="85%" alt="teasor" />
 </div>
-**Figure 1** (a) Previous motion transfer methods is based on spatial warping of single image. (b) We propose a non-local search based approach that handles a wide range of motion. (c) A single source image contains insufficient appearance data. (d) Our method can utilize multiple sources with various views. (e) Self-supervision causes identity-leakage in motion transfer. (f) We propose a cross-identity training which is effective in preserving identities of a source image.
+**Figure 1.** (a) Previous motion transfer methods is based on spatial warping of single image. (b) We propose a non-local search based approach that handles a wide range of motion. (c) A single source image contains insufficient appearance data. (d) Our method can utilize multiple sources with various views. (e) Self-supervision causes identity-leakage in motion transfer. (f) We propose a cross-identity training which is effective in preserving identities of a source image.
 
 
 Abstract
@@ -17,22 +17,22 @@ We propose an attention-based networks for transferring motions between arbitrar
 
 Demo Video
 ------------------------  
-<div style="width: 85%">{% youtube "https://youtu.be/sd_crzUo6eg" %}</div>
+<div style="width: 85%; margin: auto">{% youtube "https://youtu.be/nCELMllynAo" %}</div>
 <br />
 
 Overview
 ------------------------  
 <div style="text-align: center"><img src="{{ site.url }}/research/img/panet/overview.png" width="85%" alt="overview" /></div>
-**Figure 2** Overview of our work. It consists of (1) pose-dependent appearance embedding module, (2) pose-attentive retrieval module, and (3) image generation module. The pose-dependent appearance embedding module takes frames in the source video to embed (pose, appearance) pairs. Pose attention block retrieves appearance correspondent to the driving pose. The driving pose is extracted using the shared pose embedding network. Finally, image generation module generates the results.
+**Figure 2.** Overview of our work. It consists of (1) pose-dependent appearance embedding module, (2) pose-attentive retrieval module, and (3) image generation module. The pose-dependent appearance embedding module takes frames in the source video to embed (pose, appearance) pairs. Pose attention block retrieves appearance correspondent to the driving pose. The driving pose is extracted using the shared pose embedding network. Finally, image generation module generates the results.
 
 <div style="text-align: center"><img src="{{ site.url }}/research/img/panet/ciloss.png" width="85%" alt="overview" /></div>
-**Figure 3** Self-reconstruction and cross-identity reconstruction training scheme.
+**Figure 3.** Self-reconstruction and cross-identity reconstruction training scheme.
 
 
 Comparison
 ------------------------  
 <div style="text-align: center"><img src="{{ site.url }}/research/img/panet/results.png" width="75%" alt="overview" /></div>
-**Figure 4** Qualitative results of single source animation. We conduct experiments on VoxCeleb2, Thai-Chi-HD, and BAIR datasets. Source images and driving images represent appearance and pose to condition on, respectively.
+**Figure 4.** Qualitative results of single source animation. We conduct experiments on VoxCeleb2, Thai-Chi-HD, and BAIR datasets. Source images and driving images represent appearance and pose to condition on, respectively.
 
 
 Source Code

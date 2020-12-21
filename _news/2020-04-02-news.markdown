@@ -1,6 +1,0 @@
----
-layout: post
-date:   2020-04-02
-inline: true
----
-**I am currently looking for full-time job opportunities and postdoc positions in US and Canada.** Please feel free to drop me an [email](mailto:shnnam@yonsei.ac.kr) to contact me!

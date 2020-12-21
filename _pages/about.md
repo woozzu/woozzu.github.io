@@ -16,7 +16,7 @@ news: true
 social: true
 ---
 
-I obtained my Ph.D degree in **Computer Science** at [**Yonsei University**](https://www.yonsei.ac.kr){:target="\_blank"} under the supervision of Prof. [**Seon Joo Kim**](https://sites.google.com/site/seonjookim){:target="\_blank"}. My research interests focus on **Computer Vision** and **Machine Learning**. Particularly, I'm interested in improving various aspects of photography using machine learning, and learning visual data with minimal supervision.
+I am a post-doctoral fellow at [**York University**](https://www.yorku.ca){:target="\_blank"} under the supervision of Prof. [**Michael S. Brown**](http://www.cse.yorku.ca/~mbrown){:target="\_blank"}. I obtained my Ph.D degree in **Computer Science** at [**Yonsei University**](https://www.yonsei.ac.kr){:target="\_blank"} under the supervision of Prof. [**Seon Joo Kim**](https://sites.google.com/site/seonjookim){:target="\_blank"}. My research interests focus on **Computer Vision** and **Machine Learning**. Particularly, I'm interested in improving various aspects of photography using machine learning, and learning visual data with minimal supervision.
 
 In the summer of 2018, I interned at [**Snap Research**](http://research.snap.com){:target="\_blank"} under the supervision of [**Chongyang Ma**](http://chongyangma.com){:target="\_blank"}. I also worked with [**Ning Xu**](https://sites.google.com/view/ningxu){:target="\_blank"} at [**Adobe Research**](http://research.adobe.com){:target="\_blank"}.
 For more information, please refer to my [**CV**](assets/pdf/CV_SeonghyeonNam.pdf){:target="\_blank"}.

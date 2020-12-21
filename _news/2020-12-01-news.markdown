@@ -1,0 +1,6 @@
+---
+layout: post
+date:   2020-12-01
+inline: true
+---
+I will join Michael Brown's lab at York University as a post-doctoral fellow.

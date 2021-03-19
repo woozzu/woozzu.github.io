@@ -1,0 +1,6 @@
+---
+layout: post
+date:   2021-03-19
+inline: true
+---
+Our paper **"Temporally Smooth Online Action Detection using Cycle-consistent Future Anticipation"** is accepted to **Pattern Recognition**.

@@ -70,6 +70,9 @@
     {% if entry.abstract %}
       [<a class="abstract">Abs</a>]
     {% endif %}
+    {% if entry.link %}
+      [<a href="{{ entry.link }}" target="_blank">Link</a>]
+    {% endif %}
     {% if entry.arxiv %}
       [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
     {% endif %}

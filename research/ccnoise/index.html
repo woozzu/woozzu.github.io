@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+    
+	<head>
+		<title>A Holistic Approach to Cross-Channel Image Noise Modeling and its Application to Image Denoising</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="/css/research_styles.css">
+	    <link rel="stylesheet" href="/css/pygment_trac.css">
+	    <meta name="viewport" content="width=device-width">
+	    <!--[if lt IE 9]>
+	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+	    <!-- <script src="javascripts/scale.fix.js"></script> -->
+	</head>
+		
+    <body>
+        <div id="wrapper">
+            <section>
+                <h1 id="a-holistic-approach-to-cross-channel-image-noise-modeling-and-its-application-to-image-denoising">A Holistic Approach to Cross-Channel Image Noise Modeling and its Application to Image Denoising</h1>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Modelling and analyzing noise in images is a fundamental task in many computer vision systems. Traditionally, noise has been modelled per color channel assuming that the color channels are independent. Although the color channels can be considered as mutually independent in camera RAW images, signals from different color channels get mixed during the imaging process inside the camera due to gamut mapping, tone-mapping, and compression. We show the influence of the in-camera imaging pipeline on noise and propose a new noise model in the 3D RGB space to accounts for the color channel mix-ups. A data-driven approach for determining the parameters of the new noise model is introduced as well as its application to image denoising. The experiments show that our noise model represents the noise in regular JPEG images more accurately compared to the previous models and is advantageous in image denoising.</p>
+
+<h2 id="source-code">Source Code</h2>
+<p>Please visit our <a href="https://github.com/woozzu/ccnoise">github repository</a>.</p>
+
+<p>To run demo,</p>
+
+<ul>
+  <li>Create a dataset from temporal images: run <code class="language-plaintext highlighter-rouge">demo_dataset.m</code></li>
+  <li>Create training data: run <code class="language-plaintext highlighter-rouge">train/demo_create_training_data.py</code></li>
+  <li>Train a multi-layer perceptron (MLP): run <code class="language-plaintext highlighter-rouge">caffe train -solver=train/solver.prototxt</code></li>
+  <li>Estimate the noise parameters of a test image using a trained MLP: run <code class="language-plaintext highlighter-rouge">demo_estimation.m</code></li>
+</ul>
+
+<h2 id="dataset">Dataset</h2>
+<p>Our dataset consists of 11 static scenes captured by 3 consumer cameras. For each scene, 500 temporal images were captured to compute temporal mean image and covariance matrix for each pixel. However, this package only contains one of the 500 images for size limit, with precomputed temporal mean and covariance matrix data. For detailed information, please refer to the paper and supplementary material.</p>
+
+<p>The size of our dataset is about 10GB. You can download it via <a href="https://www.dropbox.com/s/24kds7c436i5i11/real_image_noise_dataset.zip?dl=0">a dropbox link</a>.</p>
+
+<h2 id="publications">Publications</h2>
+
+<ul>
+  <li><strong>A Holistic Approach to Cross-Channel Image Noise Modeling and its Application to Image Denoising</strong><br />
+Seonghyeon Nam*, Youngbae Hwang*, Yasuyuki Matsushita, Seon Joo Kim<br />
+<em>Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2016 <strong>[Spotlight]</strong></em><br />
+<a href="/assets/publication/ccnoise_cvpr16/ccnoise_cvpr16.pdf">[PDF]</a> <a href="/assets/publication/ccnoise_cvpr16/ccnoise_cvpr16_supp.pdf">[supplementary material]</a> <a href="/assets/publication/ccnoise_cvpr16/ccnoise_cvpr16.txt">[bibtex]</a></li>
+</ul>
+
+            </section>
+                        <footer>
+                <p><small>Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a></small></p>
+            </footer>
+
+		</div>
+	</body>
+</html>

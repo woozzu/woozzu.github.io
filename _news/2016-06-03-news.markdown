@@ -1,6 +1,0 @@
----
-layout: post
-date:   2016-06-03
-inline: true
----
-I was awarded an **excellent paper award** by Dept. of Computer Science, Yonsei University.

@@ -1,6 +1,0 @@
----
-layout: post
-date:   2020-07-03
-inline: true
----
-Our paper **"Cross-Identity Motion Transfer for Arbitrary Objects through Pose-Attentive Video Reassembling"** is accepted to ECCV 2020!

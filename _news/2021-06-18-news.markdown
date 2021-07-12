@@ -1,6 +1,0 @@
----
-layout: post
-date:   2021-06-18
-inline: true
----
-I was awarded a **Vision: Science and Applications (VISTA) Postdoctoral Fellowship** by York University!

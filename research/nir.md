@@ -25,11 +25,11 @@ Overview - Multi-Image Fusion
 Visualization of Canonical View
 ------------------------  
 <div style="text-align: center">
-<video width="256" autoplay loop>
+<video width="25%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/vis/vis.mp4" type="video/mp4">
 </video>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img width="512" src="{{ site.url }}/research/img/nir/results/vis/canview.png" />
+<img width="50%" src="{{ site.url }}/research/img/nir/results/vis/canview.png" />
 </div>
 **Figure 2.** Visualization of learned canonical view. We capture 9 consecutive images (left), and fit a homography-based neural representation to them. As can be seen, our method automatically stitches all the images in the canonical view (right) learned in the neural representation.
 

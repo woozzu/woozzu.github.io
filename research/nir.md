@@ -43,7 +43,7 @@ Overview - Multi-Image Layer Separation
 Application 1: Moiré Removal
 ------------------------  
 <div style="text-align: center">
-<table style="width:91%; margin-left: auto; margin-right: auto;">
+<table style="width:86%; margin-left: auto; margin-right: auto;">
 <tr>
   <th style="width:20%; text-align:center;">Input</th>
   <th style="width:20%; text-align:center;">AFN</th>
@@ -52,35 +52,35 @@ Application 1: Moiré Removal
   <th style="width:20%; text-align:center;">Ours</th>
 </tr>
 </table>
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/input.mp4" type="video/mp4">
 </video>
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/afn.mp4" type="video/mp4">
 </video>
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/c3net.mp4" type="video/mp4">
 </video>
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/doubledip.mp4" type="video/mp4">
 </video>
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/ours.mp4" type="video/mp4">
 </video>
 <br />
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/input.mp4" type="video/mp4">
 </video>
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/afn.mp4" type="video/mp4">
 </video>
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/c3net.mp4" type="video/mp4">
 </video>
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/doubledip.mp4" type="video/mp4">
 </video>
-<video width="192" height="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/ours.mp4" type="video/mp4">
 </video>
 </div>
@@ -90,7 +90,7 @@ Application 1: Moiré Removal
 Application 2: Reflection Removal
 ------------------------  
 <div style="text-align: center">
-<table style="width:91%; margin-left: auto; margin-right: auto;">
+<table style="width:86%; margin-left: auto; margin-right: auto;">
 <tr>
   <th style="width:20%; text-align:center;">Input</th>
   <th style="width:20%; text-align:center;">Li <i>et al.</i>, 2013</th>
@@ -99,39 +99,39 @@ Application 2: Reflection Removal
   <th style="width:20%; text-align:center;">Ours</th>
 </tr>
 </table>
-<video width="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/reflection/1/input.mp4" type="video/mp4">
 </video>
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/1/li2013.png" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/1/gandelsman2019.png" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/1/liu2020.png" />
-<video width="192" autoplay loop>
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/li2013.png" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/gandelsman2019.png" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/liu2020.png" />
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/reflection/1/ours.mp4" type="video/mp4">
 </video>
 <br />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/1/li2013_r.png" style="visibility: hidden;" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/1/li2013_r.png" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/1/gandelsman2019_r.png" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/1/liu2020_r.png" />
-<video width="192" autoplay loop>
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/li2013_r.png" style="visibility: hidden;" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/li2013_r.png" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/gandelsman2019_r.png" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/liu2020_r.png" />
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/reflection/1/ours_r.mp4" type="video/mp4">
 </video>
 <br />
-<video width="192" autoplay loop>
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/reflection/2/input.mp4" type="video/mp4">
 </video>
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/2/li2013.png" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/2/gandelsman2019.png" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/2/liu2020.png" />
-<video width="192" autoplay loop>
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/li2013.png" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/gandelsman2019.png" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/liu2020.png" />
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/reflection/2/ours.mp4" type="video/mp4">
 </video>
 <br />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/2/li2013_r.png" style="visibility: hidden;" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/2/li2013_r.png" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/2/gandelsman2019_r.png" />
-<img width="192" src="{{ site.url }}/research/img/nir/results/reflection/2/liu2020_r.png" />
-<video width="192" autoplay loop>
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/li2013_r.png" style="visibility: hidden;" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/li2013_r.png" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/gandelsman2019_r.png" />
+<img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/liu2020_r.png" />
+<video width="17%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/reflection/2/ours_r.mp4" type="video/mp4">
 </video>
 </div>
@@ -141,24 +141,24 @@ Application 2: Reflection Removal
 Application 3: Fence Removal
 ------------------------  
 <div style="text-align: center">
-<table style="width:90%; margin-left: auto; margin-right: auto;">
+<table style="width:85%; margin-left: auto; margin-right: auto;">
 <tr>
   <th style="width:33%; text-align:center;">Input</th>
   <th style="width:33%; text-align:center;">Liu <i>et al.</i>, 2020</th>
   <th style="width:33%; text-align:center;">Ours</th>
 </tr>
 </table>
-<video width="320" autoplay loop>
+<video width="28%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/fence/1/input.mp4" type="video/mp4">
 </video>
-<img width="320" src="{{ site.url }}/research/img/nir/results/fence/1/liu2020.png" />
-<video width="320" autoplay loop>
+<img width="28%" src="{{ site.url }}/research/img/nir/results/fence/1/liu2020.png" />
+<video width="28%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/fence/1/ours.mp4" type="video/mp4">
 </video>
 <br />
-<img width="320" src="{{ site.url }}/research/img/nir/results/fence/1/liu2020_f.png" style="visibility: hidden;" />
-<img width="320" src="{{ site.url }}/research/img/nir/results/fence/1/liu2020_f.png" />
-<video width="320" autoplay loop>
+<img width="28%" src="{{ site.url }}/research/img/nir/results/fence/1/liu2020_f.png" style="visibility: hidden;" />
+<img width="28%" src="{{ site.url }}/research/img/nir/results/fence/1/liu2020_f.png" />
+<video width="28%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/fence/1/ours_f.mp4" type="video/mp4">
 </video>
 </div>
@@ -168,20 +168,20 @@ Application 3: Fence Removal
 Application 4: Rain Removal
 ------------------------  
 <div style="text-align: center">
-<table style="width:90%; margin-left: auto; margin-right: auto;">
+<table style="width:85%; margin-left: auto; margin-right: auto;">
 <tr>
   <th style="width:33%; text-align:center;">Input</th>
   <th style="width:33%; text-align:center;">FastDeRain</th>
   <th style="width:33%; text-align:center;">Ours</th>
 </tr>
 </table>
-<video width="320" autoplay loop>
+<video width="28%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/rain/1/input.mp4" type="video/mp4">
 </video>
-<video width="320" autoplay loop>
+<video width="28%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/rain/1/fastderain.mp4" type="video/mp4">
 </video>
-<video width="320" autoplay loop>
+<video width="28%" autoplay loop>
   <source src="{{ site.url }}/research/img/nir/results/rain/1/ours.mp4" type="video/mp4">
 </video>
 </div>

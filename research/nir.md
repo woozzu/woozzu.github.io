@@ -135,7 +135,7 @@ Application 2: Reflection Removal
   <source src="{{ site.url }}/research/img/nir/results/reflection/2/ours_r.mp4" type="video/mp4">
 </video>
 </div>
-**Figure 5.** Comparison of refleciton removal methods on real images. We collected the baseline results from [here](https://alex04072000.github.io/ObstructionRemoval/). Thus, we do not have video results.
+**Figure 5.** Comparison of refleciton removal methods on real images. We used the baseline results reproduced by [this](https://alex04072000.github.io/ObstructionRemoval/), where video results are not available.
 
 
 Application 3: Fence Removal
@@ -162,7 +162,7 @@ Application 3: Fence Removal
   <source src="{{ site.url }}/research/img/nir/results/fence/1/ours_f.mp4" type="video/mp4">
 </video>
 </div>
-**Figure 6.** Comparison of fence removal methods on real images. We collected the baseline results from [here](https://alex04072000.github.io/ObstructionRemoval/). Thus, we do not have video results. Note that the gray pixels in the fence layer of Liu et al. indicate empty, which is same as the black pixels in our result.
+**Figure 6.** Comparison of fence removal methods on real images. We used the baseline results reproduced by [this](https://alex04072000.github.io/ObstructionRemoval/), where video results are not available. Note that the gray pixels in the fence layer of Liu et al. indicate empty, which is same as the black pixels in our result.
 
 
 Application 4: Rain Removal
@@ -185,7 +185,7 @@ Application 4: Rain Removal
   <source src="{{ site.url }}/research/img/nir/results/rain/1/ours.mp4" type="video/mp4">
 </video>
 </div>
-**Figure 7.** Comparison of rain removal methods on real images. All results are in videos.
+**Figure 7.** Comparison of rain removal methods on real images. All results are visualized in videos.
 
 
 

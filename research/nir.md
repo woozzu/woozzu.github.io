@@ -25,7 +25,7 @@ Overview - Multi-Image Fusion
 Visualization of Canonical View
 ------------------------  
 <div style="text-align: center">
-<video width="25%" autoplay loop>
+<video width="25%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/vis/vis.mp4" type="video/mp4">
 </video>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -52,35 +52,35 @@ Application 1: Moiré Removal
   <th style="width:20%; text-align:center;">Ours</th>
 </tr>
 </table>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/input.mp4" type="video/mp4">
 </video>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/afn.mp4" type="video/mp4">
 </video>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/c3net.mp4" type="video/mp4">
 </video>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/doubledip.mp4" type="video/mp4">
 </video>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/1/ours.mp4" type="video/mp4">
 </video>
 <br />
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/input.mp4" type="video/mp4">
 </video>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/afn.mp4" type="video/mp4">
 </video>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/c3net.mp4" type="video/mp4">
 </video>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/doubledip.mp4" type="video/mp4">
 </video>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/moire/2/ours.mp4" type="video/mp4">
 </video>
 </div>
@@ -99,13 +99,13 @@ Application 2: Reflection Removal
   <th style="width:20%; text-align:center;">Ours</th>
 </tr>
 </table>
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/reflection/1/input.mp4" type="video/mp4">
 </video>
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/li2013.png" />
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/gandelsman2019.png" />
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/liu2020.png" />
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/reflection/1/ours.mp4" type="video/mp4">
 </video>
 <br />
@@ -113,17 +113,17 @@ Application 2: Reflection Removal
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/li2013_r.png" />
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/gandelsman2019_r.png" />
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/1/liu2020_r.png" />
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/reflection/1/ours_r.mp4" type="video/mp4">
 </video>
 <br />
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/reflection/2/input.mp4" type="video/mp4">
 </video>
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/li2013.png" />
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/gandelsman2019.png" />
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/liu2020.png" />
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/reflection/2/ours.mp4" type="video/mp4">
 </video>
 <br />
@@ -131,7 +131,7 @@ Application 2: Reflection Removal
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/li2013_r.png" />
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/gandelsman2019_r.png" />
 <img width="17%" src="{{ site.url }}/research/img/nir/results/reflection/2/liu2020_r.png" />
-<video width="17%" autoplay loop>
+<video width="17%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/reflection/2/ours_r.mp4" type="video/mp4">
 </video>
 </div>
@@ -148,17 +148,17 @@ Application 3: Fence Removal
   <th style="width:33%; text-align:center;">Ours</th>
 </tr>
 </table>
-<video width="28%" autoplay loop>
+<video width="28%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/fence/1/input.mp4" type="video/mp4">
 </video>
 <img width="28%" src="{{ site.url }}/research/img/nir/results/fence/1/liu2020.png" />
-<video width="28%" autoplay loop>
+<video width="28%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/fence/1/ours.mp4" type="video/mp4">
 </video>
 <br />
 <img width="28%" src="{{ site.url }}/research/img/nir/results/fence/1/liu2020_f.png" style="visibility: hidden;" />
 <img width="28%" src="{{ site.url }}/research/img/nir/results/fence/1/liu2020_f.png" />
-<video width="28%" autoplay loop>
+<video width="28%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/fence/1/ours_f.mp4" type="video/mp4">
 </video>
 </div>
@@ -175,13 +175,13 @@ Application 4: Rain Removal
   <th style="width:33%; text-align:center;">Ours</th>
 </tr>
 </table>
-<video width="28%" autoplay loop>
+<video width="28%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/rain/1/input.mp4" type="video/mp4">
 </video>
-<video width="28%" autoplay loop>
+<video width="28%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/rain/1/fastderain.mp4" type="video/mp4">
 </video>
-<video width="28%" autoplay loop>
+<video width="28%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/rain/1/ours.mp4" type="video/mp4">
 </video>
 </div>

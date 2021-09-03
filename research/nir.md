@@ -40,54 +40,8 @@ Overview - Multi-Image Layer Separation
 **Figure 3.** Overview of our two-stream neural representations for multi-image layer separation. The goal of our method is to separate the underlying scene and interference moving differently in images into two layers stored in a different neural representation. To this end, we simultaneously train two neural image representations. <i>f</i><sup>1</sup> is parameterized by our homography or flow-based neural representations so as to learn the underlying scene moving according to the explicit motion model. In contrast, the interference layer that is difficult to be modelled by the motion model is stored in <i>f</i><sup>2</sup>. The generic form of image formation is a linear combination of both networks, but varies according to tasks. We also use a few regularizations for optimization, which are described in detail in the paper.
 
 
-Application 1: Moiré Removal
-------------------------  
-<div style="text-align: center">
-<table style="width:86%; margin-left: auto; margin-right: auto;">
-<tr>
-  <th style="width:20%; text-align:center;">Input</th>
-  <th style="width:20%; text-align:center;">AFN</th>
-  <th style="width:20%; text-align:center;">C3Net</th>
-  <th style="width:20%; text-align:center;">Double DIP</th>
-  <th style="width:20%; text-align:center;">Ours</th>
-</tr>
-</table>
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/1/input.mp4" type="video/mp4">
-</video>
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/1/afn.mp4" type="video/mp4">
-</video>
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/1/c3net.mp4" type="video/mp4">
-</video>
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/1/doubledip.mp4" type="video/mp4">
-</video>
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/1/ours.mp4" type="video/mp4">
-</video>
-<br />
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/2/input.mp4" type="video/mp4">
-</video>
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/2/afn.mp4" type="video/mp4">
-</video>
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/2/c3net.mp4" type="video/mp4">
-</video>
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/2/doubledip.mp4" type="video/mp4">
-</video>
-<video width="17%" autoplay loop muted>
-  <source src="{{ site.url }}/research/img/nir/results/moire/2/ours.mp4" type="video/mp4">
-</video>
-</div>
-**Figure 4.** Comparison of moiré removal methods on real images. All results are in videos.
 
-
-Application 2: Reflection Removal
+Application 1: Reflection Removal
 ------------------------  
 <div style="text-align: center">
 <table style="width:86%; margin-left: auto; margin-right: auto;">
@@ -135,10 +89,11 @@ Application 2: Reflection Removal
   <source src="{{ site.url }}/research/img/nir/results/reflection/2/ours_r.mp4" type="video/mp4">
 </video>
 </div>
-**Figure 5.** Comparison of refleciton removal methods on real images. We used the baseline results reproduced by [this](https://alex04072000.github.io/ObstructionRemoval/), where video results are not available.
+**Figure 4.** Comparison of refleciton removal methods on real images. We used the baseline results reproduced by [this](https://alex04072000.github.io/ObstructionRemoval/), where video results are not available.
 
 
-Application 3: Fence Removal
+
+Application 2: Fence Removal
 ------------------------  
 <div style="text-align: center">
 <table style="width:85%; margin-left: auto; margin-right: auto;">
@@ -162,10 +117,11 @@ Application 3: Fence Removal
   <source src="{{ site.url }}/research/img/nir/results/fence/1/ours_f.mp4" type="video/mp4">
 </video>
 </div>
-**Figure 6.** Comparison of fence removal methods on real images. We used the baseline results reproduced by [this](https://alex04072000.github.io/ObstructionRemoval/), where video results are not available. Note that the gray pixels in the fence layer of Liu et al. indicate empty, which is same as the black pixels in our result.
+**Figure 5.** Comparison of fence removal methods on real images. We used the baseline results reproduced by [this](https://alex04072000.github.io/ObstructionRemoval/), where video results are not available. Note that the gray pixels in the fence layer of Liu et al. indicate empty, which is same as the black pixels in our result.
 
 
-Application 4: Rain Removal
+
+Application 3: Rain Removal
 ------------------------  
 <div style="text-align: center">
 <table style="width:85%; margin-left: auto; margin-right: auto;">
@@ -184,8 +140,66 @@ Application 4: Rain Removal
 <video width="28%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/rain/1/ours.mp4" type="video/mp4">
 </video>
+<br />
+<video width="28%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/rain/2/input.mp4" type="video/mp4">
+</video>
+<video width="28%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/rain/2/fastderain.mp4" type="video/mp4">
+</video>
+<video width="28%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/rain/2/ours.mp4" type="video/mp4">
+</video>
 </div>
-**Figure 7.** Comparison of rain removal methods on real images. All results are visualized in videos.
+**Figure 6.** Comparison of rain removal methods on real images. All results are visualized in videos.
+
+
+
+Application 4: Moiré Removal
+------------------------  
+<div style="text-align: center">
+<table style="width:86%; margin-left: auto; margin-right: auto;">
+<tr>
+  <th style="width:20%; text-align:center;">Input</th>
+  <th style="width:20%; text-align:center;">AFN</th>
+  <th style="width:20%; text-align:center;">C3Net</th>
+  <th style="width:20%; text-align:center;">Double DIP</th>
+  <th style="width:20%; text-align:center;">Ours</th>
+</tr>
+</table>
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/1/input.mp4" type="video/mp4">
+</video>
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/1/afn.mp4" type="video/mp4">
+</video>
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/1/c3net.mp4" type="video/mp4">
+</video>
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/1/doubledip.mp4" type="video/mp4">
+</video>
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/1/ours.mp4" type="video/mp4">
+</video>
+<br />
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/2/input.mp4" type="video/mp4">
+</video>
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/2/afn.mp4" type="video/mp4">
+</video>
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/2/c3net.mp4" type="video/mp4">
+</video>
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/2/doubledip.mp4" type="video/mp4">
+</video>
+<video width="17%" autoplay loop muted>
+  <source src="{{ site.url }}/research/img/nir/results/moire/2/ours.mp4" type="video/mp4">
+</video>
+</div>
+**Figure 7.** Comparison of moiré removal methods on real images. All results are in videos.
 
 
 

@@ -1,6 +1,0 @@
----
-layout: post
-date:   2017-07-17
-inline: true
----
-Our paper **"Modelling the Scene Dependent Imaging in Cameras with a Deep Neural Network"** has been accepted to **ICCV 2017**.

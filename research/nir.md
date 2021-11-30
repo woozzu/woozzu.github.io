@@ -13,13 +13,13 @@ York University
 
 Abstract
 -------------------------
-We propose a framework for aligning and fusing multiple images into a single coordinate-based neural representations. Our framework targets burst images that have misalignment due to camera ego motion and small changes in the scene. We describe different strategies for alignment depending on the assumption of the scene motion, namely, perspective planar (i.e., homography), optical flow with minimal scene change, and optical flow with notable occlusion and disocclusion. Our framework effectively combines the multiple inputs into a single neural implicit function without the need for selecting one of the images as a reference frame. We demonstrate how to use this multi-frame fusion framework for various layer separation tasks.
+We propose a framework for aligning and fusing multiple images into a single view using neural image representations (NIRs), also known as implicit or coordinate-based neural representations. Our framework targets burst images that exhibit camera ego motion and potential changes in the scene. We describe different strategies for alignment depending on the nature of the scene motion---namely, perspective planar (i.e., homography), optical flow with minimal scene change, and optical flow with notable occlusion and disocclusion. With the neural image representation, our framework effectively combines multiple inputs into a single canonical view without the need for selecting one of the images as a reference frame. We demonstrate how to use this multi-frame fusion framework for various layer separation tasks.
 
 
-Overview - Multi-Image Fusion
+Overview - Neural Image Representations (NIRs) for Multi-Image Fusion
 ------------------------  
 <div style="text-align: center"><img src="{{ site.url }}/research/img/nir/overview_fusion.png" width="60%" alt="overview of multi-image fusion" /></div>
-**Figure 1.** Overview of the neural image representations for multi-image fusion. Assuming that <i>f</i>(<i>x</i>, <i>y</i>) learns a canonical view that summarizes all input images, the rendering of each image is formulated as a projection of the canonical view onto the view of the image. According to the assumption of the world, we use different parameterization of motion such as (a) homography-based neural representations, (b) occlusion-free flow-based neural representations, and (c) occlusion-aware flow-based neural representations. Unlike conventional multi-image fusion working on discrete 2D grids, our method fuses multiple images in a continuous image space. In addition, our method does not rely on a reference image manually selected among input images.
+**Figure 1.** Illustration of our neural image representations (NIRs). Assuming that the MLP <i>f</i> learns a canonical view where all burst images are fused, we render each image by projecting the canonical view to the frame-specific view, which is achieved by transforming the input coordinates fed into the <i>f</i>. We estimate the transform using another MLP <i>g</i>. According to different assumptions of the world, we formulate our framework differently; we formulate the transform of coordinates using (a) homography, (b) optical flow without occlusion/disocclusion, and (c) optical flow with occlusion/disocclusion.
 
 
 Visualization of Canonical View

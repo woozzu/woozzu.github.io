@@ -18,7 +18,7 @@ We propose a framework for aligning and fusing multiple images into a single vie
 
 Overview - Neural Image Representations (NIRs) for Multi-Image Fusion
 ------------------------  
-<div style="text-align: center"><img src="{{ site.url }}/research/img/nir/overview_fusion.png" width="60%" alt="overview of multi-image fusion" /></div>
+<div style="text-align: center"><img src="{{ site.url }}/research/img/nir/overview_fusion.png" width="80%" alt="overview of multi-image fusion" /></div>
 **Figure 1.** Illustration of our neural image representations (NIRs). Assuming that the MLP <i>f</i> learns a canonical view where all burst images are fused, we render each image by projecting the canonical view to the frame-specific view, which is achieved by transforming the input coordinates fed into the <i>f</i>. We estimate the transform using another MLP <i>g</i>. According to different assumptions of the world, we formulate our framework differently; we formulate the transform of coordinates using (a) homography, (b) optical flow without occlusion/disocclusion, and (c) optical flow with occlusion/disocclusion.
 
 

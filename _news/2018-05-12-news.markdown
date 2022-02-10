@@ -1,6 +1,0 @@
----
-layout: post
-date:   2018-05-12
-inline: true
----
-I am working at **Snap Research (Snapchat)** in Los Angeles as a research intern.

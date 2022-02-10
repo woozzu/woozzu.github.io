@@ -1,6 +1,0 @@
----
-layout: post
-date:   2021-07-12
-inline: true
----
-I will work at **Samsung AI Center Toronto** this Summer through the Mitacs postdoctoral internship program.

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    
+	<head>
+		<title>Cross-Identity Motion Transfer for Arbitrary Objects through Pose-Attentive Video Reassembling</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="/css/research_styles.css">
+	    <link rel="stylesheet" href="/css/pygment_trac.css">
+	    <meta name="viewport" content="width=device-width">
+	    <!--[if lt IE 9]>
+	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+	    <!-- <script src="javascripts/scale.fix.js"></script> -->
+	</head>
+		
+    <body>
+        <div id="wrapper">
+            <section>
+                <h1 id="cross-identity-motion-transfer-for-arbitrary-objectsthrough-pose-attentive-video-reassembling">Cross-Identity Motion Transfer for Arbitrary Objects<br />through Pose-Attentive Video Reassembling</h1>
+<div style="text-align: center"><img src="/research/img/panet/teasor.png" width="85%" alt="teasor" />
+</div>
+<p><strong>Figure 1.</strong> (a) Previous motion transfer methods is based on spatial warping of single image. (b) We propose a non-local search based approach that handles a wide range of motion. (c) A single source image contains insufficient appearance data. (d) Our method can utilize multiple sources with various views. (e) Self-supervision causes identity-leakage in motion transfer. (f) We propose a cross-identity training which is effective in preserving identities of a source image.</p>
+
+<h2 id="abstract">Abstract</h2>
+<p>We propose an attention-based networks for transferring motions between arbitrary objects. Given a source image(s) and a driving video, our networks animate the subject in the source images according to the motion in the driving video. In our attention mechanism, dense similarities between the learned keypoints in the source and the driving images are computed in order to retrieve the appearance information from the source images. Taking a different approach from the well-studied warping based models, our attention-based model has several advantages. By reassembling non-locally searched pieces from the source contents, our approach can produce more realistic outputs. Furthermore, our system can make use of multiple observations of the source appearance (e.g. front and sides of faces) to make the results more accurate. To reduce the training-testing discrepancy of the self-supervised learning, a novel cross-identity training scheme is additionally introduced. With the training scheme, our networks is trained to transfer motions between different subjects, as in the real testing scenario. Experimental results validate that our method produces visually pleasing results in various object domains, showing better performances compared to previous works.</p>
+
+<h2 id="demo-video">Demo Video</h2>
+<div style="width: 85%; margin: auto"><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class="embed-container">    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/nCELMllynAo" frameborder="0" allowfullscreen=""></iframe></div></div>
+<p><br /></p>
+
+<h2 id="overview">Overview</h2>
+<div style="text-align: center"><img src="/research/img/panet/overview.png" width="85%" alt="overview" /></div>
+<p><strong>Figure 2.</strong> Overview of our work. It consists of (1) pose-dependent appearance embedding module, (2) pose-attentive retrieval module, and (3) image generation module. The pose-dependent appearance embedding module takes frames in the source video to embed (pose, appearance) pairs. Pose attention block retrieves appearance correspondent to the driving pose. The driving pose is extracted using the shared pose embedding network. Finally, image generation module generates the results.</p>
+
+<div style="text-align: center"><img src="/research/img/panet/ciloss.png" width="85%" alt="overview" /></div>
+<p><strong>Figure 3.</strong> Self-reconstruction and cross-identity reconstruction training scheme.</p>
+
+<h2 id="comparison">Comparison</h2>
+<div style="text-align: center"><img src="/research/img/panet/results.png" width="75%" alt="overview" /></div>
+<p><strong>Figure 4.</strong> Qualitative results of single source animation. We conduct experiments on VoxCeleb2, Thai-Chi-HD, and BAIR datasets. Source images and driving images represent appearance and pose to condition on, respectively.</p>
+
+<h2 id="source-code">Source Code</h2>
+<p>Please visit our <a href="https://github.com/">github repository</a>.</p>
+
+<h2 id="publications">Publications</h2>
+
+<ul>
+  <li><strong>Cross-Identity Motion Transfer for Arbitrary Objects through Pose-Attentive Video Reassembling</strong><br />
+Subin Jeon, Seonghyeon Nam, Seoung Wug Oh, Seon Joo Kim<br />
+<em>Proc. European Conference on Computer Vision (ECCV) 2020</em><br />
+<a href="https://arxiv.org/abs/2007.08786">[PDF]</a></li>
+</ul>
+
+            </section>
+                        <footer>
+                <p><small>Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a></small></p>
+            </footer>
+
+		</div>
+	</body>
+</html>

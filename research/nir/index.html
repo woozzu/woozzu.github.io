@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+    
+	<head>
+		<title>Neural Image Representations for Multi-Image Fusion and Layer Separation</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="/css/research_styles.css">
+	    <link rel="stylesheet" href="/css/pygment_trac.css">
+	    <meta name="viewport" content="width=device-width">
+	    <!--[if lt IE 9]>
+	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+	    <!-- <script src="javascripts/scale.fix.js"></script> -->
+	</head>
+		
+    <body>
+        <div id="wrapper">
+            <section>
+                <h1 id="neural-image-representationsfor-multi-image-fusion-and-layer-separation">Neural Image Representations<br />for Multi-Image Fusion and Layer Separation</h1>
+<div style="text-align: center">
+<a href="http://snam.ml" target="_blank">Seonghyeon Nam</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mbrubake.github.io/" target="_blank">Marcus A. Brubaker</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cse.yorku.ca/~mbrown" target="_blank">Michael S. Brown</a><br />
+York University
+</div>
+
+<h2 id="abstract">Abstract</h2>
+<p>We propose a framework for aligning and fusing multiple images into a single view using neural image representations (NIRs), also known as implicit or coordinate-based neural representations. Our framework targets burst images that exhibit camera ego motion and potential changes in the scene. We describe different strategies for alignment depending on the nature of the scene motion—namely, perspective planar (i.e., homography), optical flow with minimal scene change, and optical flow with notable occlusion and disocclusion. With the neural image representation, our framework effectively combines multiple inputs into a single canonical view without the need for selecting one of the images as a reference frame. We demonstrate how to use this multi-frame fusion framework for various layer separation tasks.</p>
+
+<h2 id="overview---neural-image-representations-nirs-for-multi-image-fusion">Overview - Neural Image Representations (NIRs) for Multi-Image Fusion</h2>
+<div style="text-align: center"><img src="/research/img/nir/overview_fusion.png" width="80%" alt="overview of multi-image fusion" /></div>
+<p><strong>Figure 1.</strong> Illustration of our neural image representations (NIRs). Assuming that the MLP <i>f</i> learns a canonical view where all burst images are fused, we render each image by projecting the canonical view to the frame-specific view, which is achieved by transforming the input coordinates fed into the <i>f</i>. We estimate the transform using another MLP <i>g</i>. According to different assumptions of the world, we formulate our framework differently; we formulate the transform of coordinates using (a) homography, (b) optical flow without occlusion/disocclusion, and (c) optical flow with occlusion/disocclusion.</p>
+
+<h2 id="visualization-of-canonical-view">Visualization of Canonical View</h2>
+<div style="text-align: center">
+<video width="25%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/vis/vis.mp4" type="video/mp4" />
+</video>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="50%" src="/research/img/nir/results/vis/canview.png" />
+</div>
+<p><strong>Figure 2.</strong> Visualization of learned canonical view. We capture 9 consecutive images (left), and fit a homography-based neural representation to them. As can be seen, our method automatically stitches all the images in the canonical view (right) learned in the neural representation.</p>
+
+<h2 id="overview---multi-image-layer-separation">Overview - Multi-Image Layer Separation</h2>
+<div style="text-align: center"><img src="/research/img/nir/overview_lseparation.png" width="40%" alt="overview of multi-image layer separation" /></div>
+<p><strong>Figure 3.</strong> Overview of our two-stream NIRs for multi-image layer separation. The goal of our method is to separate the underlying scene and interference moving differently in images into two layers stored in a different NIR. To this end, we simultaneously train two NIRs. <i>f</i><sup>1</sup> is parameterized by our homography or flow-based NIRs so as to learn the underlying scene moving according to the explicit motion model. In contrast, the interference layer that is difficult to be modelled by the motion model is stored in <i>f</i><sup>2</sup>. The generic form of image formation is a linear combination of both networks, but varies according to tasks. We also use a few regularizations for optimization, which are described in detail in the paper.</p>
+
+<h2 id="application-1-reflection-removal">Application 1: Reflection Removal</h2>
+<div style="text-align: center">
+<table style="width:86%; margin-left: auto; margin-right: auto;">
+<tr>
+  <th style="width:20%; text-align:center;">Input</th>
+  <th style="width:20%; text-align:center;">Li <i>et al.</i>, 2013</th>
+  <th style="width:20%; text-align:center;">Double DIP</th>
+  <th style="width:20%; text-align:center;">Liu <i>et al.</i>, 2020</th>
+  <th style="width:20%; text-align:center;">Ours</th>
+</tr>
+</table>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/reflection/1/input.mp4" type="video/mp4" />
+</video>
+<img width="17%" src="/research/img/nir/results/reflection/1/li2013.png" />
+<img width="17%" src="/research/img/nir/results/reflection/1/gandelsman2019.png" />
+<img width="17%" src="/research/img/nir/results/reflection/1/liu2020.png" />
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/reflection/1/ours.mp4" type="video/mp4" />
+</video>
+<br />
+<img width="17%" src="/research/img/nir/results/reflection/1/li2013_r.png" style="visibility: hidden;" />
+<img width="17%" src="/research/img/nir/results/reflection/1/li2013_r.png" />
+<img width="17%" src="/research/img/nir/results/reflection/1/gandelsman2019_r.png" />
+<img width="17%" src="/research/img/nir/results/reflection/1/liu2020_r.png" />
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/reflection/1/ours_r.mp4" type="video/mp4" />
+</video>
+<br />
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/reflection/2/input.mp4" type="video/mp4" />
+</video>
+<img width="17%" src="/research/img/nir/results/reflection/2/li2013.png" />
+<img width="17%" src="/research/img/nir/results/reflection/2/gandelsman2019.png" />
+<img width="17%" src="/research/img/nir/results/reflection/2/liu2020.png" />
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/reflection/2/ours.mp4" type="video/mp4" />
+</video>
+<br />
+<img width="17%" src="/research/img/nir/results/reflection/2/li2013_r.png" style="visibility: hidden;" />
+<img width="17%" src="/research/img/nir/results/reflection/2/li2013_r.png" />
+<img width="17%" src="/research/img/nir/results/reflection/2/gandelsman2019_r.png" />
+<img width="17%" src="/research/img/nir/results/reflection/2/liu2020_r.png" />
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/reflection/2/ours_r.mp4" type="video/mp4" />
+</video>
+</div>
+<p><strong>Figure 4.</strong> Comparison of refleciton removal methods on real images. We used the baseline results reproduced by <a href="https://alex04072000.github.io/ObstructionRemoval/">this</a>, where video results are not available.</p>
+
+<h2 id="application-2-fence-removal">Application 2: Fence Removal</h2>
+<div style="text-align: center">
+<table style="width:85%; margin-left: auto; margin-right: auto;">
+<tr>
+  <th style="width:33%; text-align:center;">Input</th>
+  <th style="width:33%; text-align:center;">Liu <i>et al.</i>, 2020</th>
+  <th style="width:33%; text-align:center;">Ours</th>
+</tr>
+</table>
+<video width="28%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/fence/1/input.mp4" type="video/mp4" />
+</video>
+<img width="28%" src="/research/img/nir/results/fence/1/liu2020.png" />
+<video width="28%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/fence/1/ours.mp4" type="video/mp4" />
+</video>
+<br />
+<img width="28%" src="/research/img/nir/results/fence/1/liu2020_f.png" style="visibility: hidden;" />
+<img width="28%" src="/research/img/nir/results/fence/1/liu2020_f.png" />
+<video width="28%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/fence/1/ours_f.mp4" type="video/mp4" />
+</video>
+</div>
+<p><strong>Figure 5.</strong> Comparison of fence removal methods on real images. We used the baseline results reproduced by <a href="https://alex04072000.github.io/ObstructionRemoval/">this</a>, where video results are not available. Note that the gray pixels in the fence layer of Liu et al. indicate empty, which is same as the black pixels in our result.</p>
+
+<h2 id="application-3-rain-removal">Application 3: Rain Removal</h2>
+<div style="text-align: center">
+<table style="width:85%; margin-left: auto; margin-right: auto;">
+<tr>
+  <th style="width:33%; text-align:center;">Input</th>
+  <th style="width:33%; text-align:center;">FastDeRain</th>
+  <th style="width:33%; text-align:center;">Ours</th>
+</tr>
+</table>
+<video width="28%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/rain/1/input.mp4" type="video/mp4" />
+</video>
+<video width="28%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/rain/1/fastderain.mp4" type="video/mp4" />
+</video>
+<video width="28%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/rain/1/ours.mp4" type="video/mp4" />
+</video>
+<br />
+<video width="28%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/rain/2/input.mp4" type="video/mp4" />
+</video>
+<video width="28%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/rain/2/fastderain.mp4" type="video/mp4" />
+</video>
+<video width="28%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/rain/2/ours.mp4" type="video/mp4" />
+</video>
+</div>
+<p><strong>Figure 6.</strong> Comparison of rain removal methods on real images. All results are visualized in videos.</p>
+
+<h2 id="application-4-moiré-removal">Application 4: Moiré Removal</h2>
+<div style="text-align: center">
+<table style="width:86%; margin-left: auto; margin-right: auto;">
+<tr>
+  <th style="width:20%; text-align:center;">Input</th>
+  <th style="width:20%; text-align:center;">AFN</th>
+  <th style="width:20%; text-align:center;">C3Net</th>
+  <th style="width:20%; text-align:center;">Double DIP</th>
+  <th style="width:20%; text-align:center;">Ours</th>
+</tr>
+</table>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/1/input.mp4" type="video/mp4" />
+</video>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/1/afn.mp4" type="video/mp4" />
+</video>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/1/c3net.mp4" type="video/mp4" />
+</video>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/1/doubledip.mp4" type="video/mp4" />
+</video>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/1/ours.mp4" type="video/mp4" />
+</video>
+<br />
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/2/input.mp4" type="video/mp4" />
+</video>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/2/afn.mp4" type="video/mp4" />
+</video>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/2/c3net.mp4" type="video/mp4" />
+</video>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/2/doubledip.mp4" type="video/mp4" />
+</video>
+<video width="17%" autoplay="" loop="" muted="">
+  <source src="/research/img/nir/results/moire/2/ours.mp4" type="video/mp4" />
+</video>
+</div>
+<p><strong>Figure 7.</strong> Comparison of moiré removal methods on real images. All results are in videos.</p>
+
+<h2 id="publications">Publications</h2>
+
+<ul>
+  <li><strong>Neural Image Representations for Multi-Image Fusion and Layer Separation</strong><br />
+Seonghyeon Nam, Marcus A. Brubaker, Michael S. Brown<br />
+<em>arXiv preprint arXiv:2108.01199, 2021</em><br />
+<a href="https://arxiv.org/abs/2108.01199">[arXiv]</a></li>
+</ul>
+
+            </section>
+                        <footer>
+                <p><small>Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a></small></p>
+            </footer>
+
+		</div>
+	</body>
+</html>

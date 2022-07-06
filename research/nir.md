@@ -208,5 +208,5 @@ Publications
 
 * **Neural Image Representations for Multi-Image Fusion and Layer Separation**<br />
 Seonghyeon Nam, Marcus A. Brubaker, Michael S. Brown<br />
-*arXiv preprint arXiv:2108.01199, 2021*<br />
+*Proc. European Conference on Computer Vision (ECCV) 2022*<br />
 [\[arXiv\]](https://arxiv.org/abs/2108.01199)

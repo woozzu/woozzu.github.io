@@ -1,6 +1,0 @@
----
-layout: post
-date:   2020-03-20
-inline: true
----
-Our paper **"Learning the Loss Functions in a Discriminative Space for Video Restoration"** has been uploaded to arXiv.

@@ -1,6 +1,0 @@
----
-layout: post
-date:   2017-06-26
-inline: true
----
-Our paper **"Deep Semantics-Aware Photo Adjustment"** is now available at [arXiv](https://arxiv.org/abs/1706.08260v1).

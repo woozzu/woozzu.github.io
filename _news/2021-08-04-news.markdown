@@ -1,6 +1,0 @@
----
-layout: post
-date:   2021-08-04
-inline: true
----
-Our paper **"Neural Image Representations for Multi-Image Fusion and Layer Separation"** is uploaded to arXiv. Please visit our [project page](http://snam.ml/research/nir) to see results.
